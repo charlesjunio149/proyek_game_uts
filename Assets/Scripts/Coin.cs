@@ -8,7 +8,7 @@ public class Coin : MonoBehaviour
 
     void Awake()
     {
-        CanvasInfo = GameObject.Find("Canvas1");
+        CanvasInfo = GameObject.Find("Canvas");
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
