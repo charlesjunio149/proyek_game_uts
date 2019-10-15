@@ -8,14 +8,14 @@ public class Coin : MonoBehaviour
 
     void Awake()
     {
-        CanvasInfo = GameObject.Find("CanvasInfo");
+        CanvasInfo = GameObject.Find("Canvas1");
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
             Destroy(gameObject);
-            CanvasInfo.GetComponent<CanvasInfo>().tambahKoin();
+            CanvasInfo.GetComponent<Canvas1>().tambahKoin();
         }
     }
 }
