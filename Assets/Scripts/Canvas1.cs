@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class Canvas1 : MonoBehaviour
 {
+    public Text Text_koin;
     public float time=0;
     [SerializeField]
     Text txttime; 
@@ -15,6 +16,20 @@ public class Canvas1 : MonoBehaviour
     {
         
     }
+
+    public void tambahKoin()
+    {
+        int koin = int.Parse(Text_koin.text);
+        koin++;
+        Text_koin.text = koin + "";
+
+        //if (koin >= 5)
+        //{
+        //    Pohon.SetActive(true);
+        //}
+    }
+
+
 
     // Update is called once per frame
     void Update()
